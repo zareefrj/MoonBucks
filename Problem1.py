@@ -1,35 +1,36 @@
 def SentimentAnalysis(country, file_name):
     #READING THE TXT FILE
     with open (file_name,"r",encoding="utf-8") as file:
-        article=file.read()
+        article=file.read().lower()
         #print(var)
         file.close()
         pass
 
     #DATA CLEANING
-    #1.2 : REMOVING & COUNTING STOPWORDS
+
     #CREATE TEXTBLOB & SENTIMENT ANALYSIS
-    from textblob import TextBlob, Word
+    from textblob import TextBlob
     blob=TextBlob(article)
     #print(blob)
 
-    #REMOVE STOPWORDS & LEMMATASIZE
-    #COUNTING STOPWORDS
+    #REMOVE & COUNTING STOPWORDS
     stopword_freq=0
     clean_data_1="" #store string with removed stopwords
-    for w in blob.words:
-        word=Word(w)
+    for word in blob.words:
+        
         if word in final_stopword_list:
             stopword_freq+=1
             
         else:
-            clean_data_1+=" "+word.lemmatize()
+            clean_data_1+=" "+word
         
-    #GET RID OF PUNCTUATIONS & MAKE IT ALL LOWERCASE
-    clean_data_2=clean_data_1.replace('[^\w\s]','')
-    #print(clean_data_2.split)
+    #removing punctuations
+    punctuation= '''!()-[]{};:'"\, <>./?@#$%^&*_~'''
+    for x in punctuation:
+        clean_data_1=clean_data_1.replace(x," ")
+
     #SENTIMENT ANALYSIS
-    cleanblob=TextBlob(clean_data_2)
+    cleanblob=TextBlob(clean_data_1)
     print(country)
     print("Overall Sentiment: ",round(cleanblob.sentiment.polarity,2)) # -1 negative, 0 neutral, +1 positive; 0 objective, 1 subjective
     #print(cleanblob)
@@ -51,9 +52,9 @@ def SentimentAnalysis(country, file_name):
     pos_percent=round((pos_count*100)/(pos_count+neg_count),2)
     neg_percent=round(100-pos_percent,2)
     print("No of Positive Words: ",pos_count,"(",pos_percent,"%)")
-    #print(pos_words_list)
+    print(pos_words_list)
     print("No of Negative Words: ",neg_count,"(",neg_percent,"%)")
-    #print(neg_words_list)
+    print(neg_words_list)
 
 #ADDING ONLINE STOP WORDS TO THE EXISTING NLTK LIBRARY
 #THIS PART IS CONSTANT FOR EVERY SENTIMENT ANALYSIS, THEREFORE IT IS IN THE MAIN METHOD
