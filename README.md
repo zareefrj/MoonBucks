@@ -1,5 +1,5 @@
 # MoonBucks
-Algorithm Design Semester 2 2021/22 Group 3 Project.
+Algorithm Design Semester 2 2021/22 Group 3 Project. ***THESE ARE MY APPROACHES SO FAR, IF YOU HAVE ANY BETTER IDEAS/SUGGESTIONS, FEEL FREE TO DISCUSS FURTHER***
 ## PROBLEM 1
 ### Step 1: Extracting the words from the articles
 #### Approach 1 (Unsuccessful)
