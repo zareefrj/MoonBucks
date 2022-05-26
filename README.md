@@ -19,5 +19,15 @@ removed the punctuations, stopwords (counting them as well) & lowering all lette
 ### Step 3: Sentiment Analysis
 Used [TextBlob](https://textblob.readthedocs.io/en/dev/) built in library to do sentiment analysis. How TextBlob does this: https://planspace.org/20150607-textblob_sentiment/
 TextBlob inner workings: https://youtu.be/Y8iNez1tCx8 TextBlob Tutorial: https://youtu.be/pkdmcsyYvb4
+
+![image](https://user-images.githubusercontent.com/76507749/170492209-fba53396-0ac1-4548-8582-18bb510f5feb.png)
 ### Step 4: Ploting
-So far I am experimenting on the bar charts...you can use the TextBlob Test file to try things out for yourself.
+A bar chart is created to visualize the sentiment score of each country. The bar chart is chosen to represent this because the data is categorical & not continuous (i.e. the x-axis are the countries. In contrast, other charts like histograms are for continuous & numerical data in which the data can aggreated into bins (range groups), this creates a continuous gapless chart. In addition, a bar chart is perfect for showing the contrast between the countries, which aids in decision making.
+Only the sentiment score of the countries are plotted as we believe that that metric is enough for proceeding analysis as the ratio between the positive & negative sentiments are into account into the overall sentiment score.
+
+![image](https://user-images.githubusercontent.com/76507749/170492461-15497842-b465-4252-90e2-cf08fb7ac1fc.png)
+## Sentiment Analysis Time Complexity
+**O(n); n is the no of words in the text file.** The algorithm checks for every word in the text file against TextBlob (nltk package)'s library, then sums up the sentiment scores of all the words. To make it more efficient & faster, stop words & punctuations are removed as they do not contribute to the overall sentiment score.
+# PROBLEM 2
+## Step 1: Finding distribution Centre
+## Step 2: Finding the optimal route
