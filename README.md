@@ -30,9 +30,14 @@ Only the sentiment score of the countries are plotted as we believe that that me
 **O(n); n is the no of words in the text file.** The algorithm checks for every word in the text file against TextBlob (nltk package)'s library, then sums up the sentiment scores of all the words. To make it more efficient & faster, stop words & punctuations are removed as they do not contribute to the overall sentiment score.
 # PROBLEM 2
 ## Step 1: Finding distribution Centre
-Source 1: https://cse442-17f.github.io/Traveling-Salesman-Algorithms/
+Since Google API required us to create billing account, we resolve to use free API for the time being.\
+API : https://rapidapi.com/trueway/api/trueway-matrix
 
 ## Step 2: Finding the optimal route
+Christofides' Algorithm is a 1.5-approximation algorithm.\
+Time Complexity: $O(|V|^4)$ : which is significantly better than any of the exact solution approaches.\
+Source: https://cse442-17f.github.io/Traveling-Salesman-Algorithms/
+
 Using Geocoding library
 
 I found this YouTube video on how to use the Geocoding Library
