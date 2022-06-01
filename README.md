@@ -34,4 +34,5 @@ Only the sentiment score of the countries are plotted as we believe that that me
 Using Geocoding library
 
 I found this YouTube video on how to use the Geocoding Library
-![video](https://www.youtube.com/watch?v=d1QGLwie9YU&ab_channel=JieJenn)
+
+[![Geocoding Library](https://img.youtube.com/vi/d1QGLwie9YU/0.jpg)](http://www.youtube.com/watch?v=d1QGLwie9YU)
