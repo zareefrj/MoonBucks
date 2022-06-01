@@ -32,3 +32,6 @@ Only the sentiment score of the countries are plotted as we believe that that me
 ## Step 1: Finding distribution Centre
 ## Step 2: Finding the optimal route
 Using Geocoding library
+
+I found this YouTube video on how to use the Geocoding Library
+![video](https://www.youtube.com/watch?v=d1QGLwie9YU&ab_channel=JieJenn)
