@@ -51,6 +51,8 @@ lowest optimal delivery.``
 I'm not sure about it but I think for this problem, we can calcukate the probability by using below formula:
 
 ![algo group project probability](https://user-images.githubusercontent.com/59971431/172339009-30b69c98-f180-4c8e-a42a-dc245a4ab22e.png)
+![WhatsApp Image 2022-06-13 at 7 47 24 PM](https://user-images.githubusercontent.com/106103990/173389423-9dc4ba88-e63c-42f4-bcd1-676aa23c3865.jpeg)
+[Q3.Python.txt](https://github.com/zareefrj/MoonBucks/files/8892421/Q3.Python.txt)
 
-[Q3 Python.txt](https://github.com/zareefrj/MoonBucks/files/8886647/Q3.Python.txt)
+
 
