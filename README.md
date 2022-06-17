@@ -30,9 +30,13 @@ Only the sentiment score of the countries are plotted as we believe that that me
 **O(n); n is the no of words in the text file.** The algorithm checks for every word in the text file against TextBlob (nltk package)'s library, then sums up the sentiment scores of all the words. To make it more efficient & faster, stop words & punctuations are removed as they do not contribute to the overall sentiment score.
 ## PROBLEM 2
 ### Step 1: Finding distribution Centre
-The stores chosen in a country are regarded as a series of points. We take the point/store nearest to the geometric median of the points to be the distribution centre. To find the geometric median, Weiszfeld Algorithm is used.
+The stores chosen in a country are regarded as a series of points. We take the point/store nearest to the geometric median of the points to be the distribution centre. To find the geometric median, Weiszfeld's algorithm is used.
 
-\left.y_{{i+1}}=\left(\sum _{{j=1}}^{m}{\frac  {x_{j}}{\|x_{j}-y_{i}\|}}\right)\right/\left(\sum _{{j=1}}^{m}{\frac  {1}{\|x_{j}-y_{i}\|}}\right).
+Weiszfeld's algortihm Formulae:
+![image](https://user-images.githubusercontent.com/66478911/174212931-aa0ca835-63d6-428d-b499-d7073e66e541.png)
+
+It is a form of of iteratively re-weighted sum of squares. This algorithm defines a set of weights that are inversely proportional to the distances from the current estimate to the sample points, and creates a new estimate that is the weighted average of the sample according to these weights. 
+
 Since Google API required us to create billing account, we resolve to use free API for the time being.\
 API : https://rapidapi.com/trueway/api/trueway-matrix
 
