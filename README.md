@@ -37,6 +37,9 @@ Weiszfeld's algortihm Formulae:
 
 It is a form of of iteratively re-weighted sum of squares. This algorithm defines a set of weights that are inversely proportional to the distances from the current estimate to the sample points, and creates a new estimate that is the weighted average of the sample according to these weights. 
 
+Time complexity: O(N*M/K) where N is the number of points, M  is the dimension and K is the error.
+In this solution, M is set to 2 and the error is set to 0.0000000001
+
 Since Google API required us to create billing account, we resolve to use free API for the time being.\
 API : https://rapidapi.com/trueway/api/trueway-matrix
 
