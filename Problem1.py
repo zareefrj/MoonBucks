@@ -15,7 +15,8 @@ nltk_stop_words = stopwords.words('english')
 final_stopword_list=nltk_stop_words + newSw_list
 
 #Sentiment Analysis
-def SentimentAnalysis(country, file_name):
+def SentimentAnalysis(country):
+    file_name="Articles/"+country+".txt"
     #READING THE TXT FILE
     with open (file_name,"r",encoding="utf-8") as file:
         article=file.read().lower()
@@ -79,9 +80,9 @@ def SentimentAnalysis(country, file_name):
 def plotChart(country):
     import plotly.graph_objects as go
     fig = go.Figure(
-            data=[go.Bar(x=country, y=[SentimentAnalysis(country[0], country[0]+".txt"),
-            SentimentAnalysis(country[1], country[1]+".txt"),SentimentAnalysis(country[2], country[2]+".txt"),
-            SentimentAnalysis(country[3], country[3]+".txt"),SentimentAnalysis(country[4], country[4]+".txt")])],
+            data=[go.Bar(x=country, y=[SentimentAnalysis(country[0]),
+            SentimentAnalysis(country[1]),SentimentAnalysis(country[2]),
+            SentimentAnalysis(country[3]),SentimentAnalysis(country[4])])],
             layout=go.Layout(
                 title=go.layout.Title(text="The Sentiment of Countries")
             )
