@@ -91,6 +91,6 @@ def plotChart(country):
     fig.show()
 
 ### DRIVER CODE ####
-countries=["Great Britain","New Zealand","Japan","Canada","Saudi Arabia"]
+countries=["Great Britain","New Zealand","Japan","Singapore","Saudi Arabia"]
 #for country in countries:
 plotChart(countries)
