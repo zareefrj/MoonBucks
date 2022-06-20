@@ -26,8 +26,8 @@ for x in range (0, len(Countries)):
 
 print ("Calculated Probability: ")
 
-for x in Probability:
-    print(round(x,4))
+for x in range (0, len(Countries)):
+    print(Countries[x] + ' = ', round(Probability[x],4))
 
 # getMax method
 def getMax(array_A):
@@ -63,9 +63,8 @@ arr = Probability.copy()
 shellSort(arr, len(arr))
 print('\nSorted Probability: ')
 
-for x in arr:
-    print(round(x,4))
-
+for x in range (0, len(arr)):
+    print(x+1,'->', round(arr[x],4))
 
 Sorted_Sequence_of_Country = []
 
@@ -77,5 +76,5 @@ for x in range(0, len(arr)):
 
 print("\nCountries Ranking:")
 
-for x in Sorted_Sequence_of_Country:
-    print(Countries[x])
+for x in range (0, len(Sorted_Sequence_of_Country)):
+    print(x+1,'->', Countries[Sorted_Sequence_of_Country[x]])
