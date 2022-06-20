@@ -1,3 +1,5 @@
+from matplotlib import pyplot as plt
+
 #calculate probability
 #japan=13736837
 Countries = ["Great Britain","New Zealand","Japan","Singapore","Saudi Arabia"]
@@ -78,3 +80,12 @@ print("\nCountries Ranking:")
 
 for x in range (0, len(Sorted_Sequence_of_Country)):
     print(x+1,'->', Countries[Sorted_Sequence_of_Country[x]])
+
+def plotPie():
+    mylabels = ["Great Britain","New Zealand","Japan","Singapore","Saudi Arabia"]
+    y = [Probability[0],Probability[1],Probability[2],Probability[3],Probability[4]]
+    plt.pie(y, labels=mylabels, explode=[0, 0.2, 0, 0, 0], shadow=True, autopct=lambda p: '{:.2f}%'.format(p), startangle = 180)
+    plt.title("Probability of Selecting Country to Expand Business")
+    plt.show()
+
+plotPie()
