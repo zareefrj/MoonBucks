@@ -1,5 +1,5 @@
 # MoonBucks
-Algorithm Design Semester 2 2021/22 Group 3 Project. ***THESE ARE MY APPROACHES SO FAR, IF YOU HAVE ANY BETTER IDEAS/SUGGESTIONS, FEEL FREE TO DISCUSS FURTHER***
+Algorithm Design Semester 2 2021/22 Group 3 Project. This ReadMe documents the approaches that our group used within this project.
 ## PROBLEM 1
 ### Step 1: Extracting the words from the articles
 #### Approach 1 (Unsuccessful)
@@ -58,7 +58,7 @@ I found this YouTube video on how to use the Geocoding Library
 ``The probability of a country that has a good local economic and social situation with the
 lowest optimal delivery.``
 
-I'm not sure about it but I think for this problem, we can calcukate the probability by using below formula:
+We can calcukate the probability by using below formula:
 ![algo group project probability](https://user-images.githubusercontent.com/59971431/172339009-30b69c98-f180-4c8e-a42a-dc245a4ab22e.png)
 
 Updated Approach to calculating probability:
